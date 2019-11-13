@@ -6,9 +6,9 @@
 title: 'Arnold Blog'
 subtitle: 'Arnold Blog'
 description: 'Blog博客技术分享个人经验总结'
-keywords:Blog,博客,技术分享,个人经验总结
-author: Arnold Shu
-language: en
+keywords:'Blog,博客,技术分享,个人经验总结'
+author: 'Arnold_Shu'
+language: 'en'
 timezone: 'Asia/Shanghai'
 
 # URL
