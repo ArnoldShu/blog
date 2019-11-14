@@ -41,7 +41,7 @@ subnav:
 #  shortname: xxxxxxxxx
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if
-  # you have set "disqus_shortname" in your site's "_config.yml"
+  # you have set "disqus_shortname" in your site's "_config_back.yml"
 #changyan:
 #  on: true
 #  appid: xxxx
