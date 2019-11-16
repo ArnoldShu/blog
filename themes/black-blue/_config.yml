@@ -5,18 +5,18 @@
 ## Tags Cloud Page: `hexo new page tags`
 menu:
   # 主页: /archives/
-  所有文章: /blog/archives/
-  玩转开发工具: /blog/categories/开发工具/
-  玩转数码: /blog/categories/digital
-  算法学习: /blog/categories/algorithm
-  关于我: /blog/about/
-  静心阅读: /blog/tags
+  所有文章: /archives/
+  玩转开发工具: /categories/开发工具/
+  玩转数码: /categories/digital
+  算法学习: /categories/algorithm
+  关于我: /about/
+  静心阅读: /tags
 
 # Link to your avatar | 填写头像地址
-avatar: /blog/img/avatar.png
+avatar: /img/avatar.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /blog/img/favicon.png
+favicon: /img/favicon.png
 
 # 域名是否启用https，如果启用，js文件必须https加载
 isHttps: false
