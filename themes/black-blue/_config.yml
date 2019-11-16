@@ -13,10 +13,10 @@ menu:
   静心阅读: /blog/tags
 
 # Link to your avatar | 填写头像地址
-avatar: /img/avatar.png
+avatar: blog/img/avatar.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /img/favicon.png
+favicon: blog/img/favicon.png
 
 # 域名是否启用https，如果启用，js文件必须https加载
 isHttps: false
