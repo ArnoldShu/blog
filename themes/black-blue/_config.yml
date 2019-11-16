@@ -19,7 +19,7 @@ avatar: /img/avatar.png
 favicon: /img/favicon.png
 
 # 域名是否启用https，如果启用，js文件必须https加载
-isHttps: true
+isHttps: false
 
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
@@ -36,16 +36,16 @@ subnav:
 
 # >>> Conments 评论系统 <<<
 
-disqus:
-  on: false
-  shortname: xxxxxxxxx
+#disqus:
+  #on: false
+  #shortname: xxxxxxxxx
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if
   # you have set "disqus_shortname" in your site's "_config.yml"
-changyan:
-  on: true
-  appid: xxxx
-  conf: xxxxxxxxx
+#changyan:
+  #on: true
+  #appid: xxxx
+  #conf: xxxxxxxxx
   # 是否开启畅言评论，
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 畅言评论在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
@@ -101,7 +101,7 @@ search_box: true
 # Animation in Homepage and Loading avatar
 animate: true
 
-# >>> Small features | 小功能设置 <<<
+# >>> Small features | 小功能设置 <<<google_analytics
 
 # 是否开启边栏多标签切换
 # Birdhouse button in left column
@@ -145,8 +145,8 @@ baidushare: true
 # baidu_site: #c167b9feb4f0b208b712c79629c188e4
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X, or Baidu Analytics hash key
-google_analytics: xxxxx
-baidu_analytics: xxxxxx
+#google_analytics: xxxxx
+#baidu_analytics: xxxxxx
 
 
 
