@@ -6,8 +6,7 @@
 menu:
   # 主页: /archives/
   所有文章: /archives/
-  #玩转开发工具: /categories/开发工具/
-  玩转数码: /categories/digital
+  日常总结: /summary/
   算法学习: /categories/algorithm
   关于我: /about/
   读书笔记: /tags
@@ -27,8 +26,8 @@ isHttps: false
 ## RSS requires a plugin to take effect | 使用 RSS 需先安装对应插件
 ## https://github.com/hexojs/hexo-generator-feed
 subnav:
-  github: xxxxx
-  weibo: xxxxxxxx
+  github: https://github.com/ArnoldShu
+  weibo: https://github.com/ArnoldShu
   rss: /atom.xml
 
   # Google: "#"
@@ -49,13 +48,13 @@ subnav:
   # 是否开启畅言评论，
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 畅言评论在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
-gitment:
-  on: true
-  githubID: yourid
-  repo: yourrepo
-  client_id: yourid
-  client_secret: yoursecret
-  lazy: true
+#gitment:
+#  on: true
+#  githubID: yourid
+#  repo: yourrepo
+#  client_id: yourid
+#  client_secret: yoursecret
+#  lazy: true
 
 # >>> Style Customisation 样式自定义 <<<
 
@@ -83,7 +82,7 @@ blockquote_style:
   # 自定义文章「引用部分」的样式
 
 # 左边栏宽度 px
-left_col_width: 300
+left_col_width: 400
 
 # 目录中标题不换行
 # Keep TOC title on the same line |
@@ -114,7 +113,7 @@ friends:
   segmentfault: https://segmentfault.com/blog/maocg_web
   简书: http://www.jianshu.com/users/eb37ef89c746/latest_articles
 #是否开启“关于我”。
-aboutme: 爱动漫,爱游戏,爱编程,爱运动,爱的太多了!
+aboutme: !
 #aboutme: false
 
 # 是否在新窗口打开链接
