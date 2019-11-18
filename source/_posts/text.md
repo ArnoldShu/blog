@@ -3,10 +3,6 @@ date: 2017-10-30 22:35:37
 tags: 日常总结
 categories: algorithm
 ---
-** {{ title }}：** <Excerpt in index | 首页摘要>
-红黑树
-<!-- more -->
-<The rest of contents | 余下全文>
 **1:linux常用目录的作用**
 	/:根目录
 	/bin:命令保存目录(普通用户就可以读取的命令)
