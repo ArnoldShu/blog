@@ -1,6 +1,6 @@
 ---
 title: linux常用命令
-date: 2017-10-30 22:35:37
+date: 2017-10-31 22:35:37
 tags: 日常总结
 categories: algorithm
 ---
