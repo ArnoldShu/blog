@@ -1,5 +1,5 @@
 ---
-title: linux常用命令
+title: linux常用命令11111
 date: 2017-10-30 22:35:37
 tags: 日常总结
 categories: algorithm
