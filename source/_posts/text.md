@@ -5,3 +5,5 @@ categories: algorithm
 ---
  {{ title }} 
 有关一些常用Linux的命令合计,以及参数讲解
+<!-- more -->
+<The rest of contents | 余下全文>
