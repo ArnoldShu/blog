@@ -90,7 +90,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: black-blue
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -98,26 +98,26 @@ deploy:
   type: ''
 
 #插件配置
-Plugins:
-  - hexo-generator-feed
-  - hexo-generator-sitemap
-  - hexo-generator-baidu-sitemap
-
-#rss配置
-feed:
-  type: atom
-  path: atom.xml
-  limit: 20
-
-#本地搜索配置
-search:
-  path: search.json
-  field: post
-
-#站点地图，seo搜索引擎需要
-sitemap:
-  path: sitemap.xml
-baidusitemap:
-  path: baidusitemap.xml
+#Plugins:
+#  - hexo-generator-feed
+#  - hexo-generator-sitemap
+#  - hexo-generator-baidu-sitemap
+#
+##rss配置
+#feed:
+#  type: atom
+#  path: atom.xml
+#  limit: 20
+#
+##本地搜索配置
+#search:
+#  path: search.json
+#  field: post
+#
+##站点地图，seo搜索引擎需要
+#sitemap:
+#  path: sitemap.xml
+#baidusitemap:
+#  path: baidusitemap.xml
 
 
