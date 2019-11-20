@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="alternate" href="/atom.xml" title="Arnold" type="application/atom+xml">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="** linux常用命令22222：** &amp;lt;Excerpt in index | 首页摘要&amp;gt;linux常用目录的作用">
+<meta name="keywords" content="日常总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="linux常用命令22222">
+<meta property="og:url" content="http:&#x2F;&#x2F;http&#x2F;&#x2F;159.138.20.29&#x2F;2017&#x2F;10&#x2F;31&#x2F;test&#x2F;index.html">
+<meta property="og:site_name" content="Arnold">
+<meta property="og:description" content="** linux常用命令22222：** &amp;lt;Excerpt in index | 首页摘要&amp;gt;linux常用目录的作用">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-18T11:45:44.016Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://http//159.138.20.29/2017/10/31/test/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>linux常用命令22222 | Arnold</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Arnold</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">Arnold</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://http://159.138.20.29/2017/10/31/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Arnold">
+      <meta itemprop="description" content="Blog博客技术分享个人经验总结">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Arnold">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          linux常用命令22222
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-10-31 22:35:37" itemprop="dateCreated datePublished" datetime="2017-10-31T22:35:37+08:00">2017-10-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2019-11-18 19:45:44" itemprop="dateModified" datetime="2019-11-18T19:45:44+08:00">2019-11-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">algorithm</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>** linux常用命令22222：** &lt;Excerpt in index | 首页摘要&gt;<br>linux常用目录的作用</p>
+<a id="more"></a>
+<p>&lt;The rest of contents | 余下全文&gt;<br><strong>1:linux常用目录的作用</strong><br>    /:根目录<br>    /bin:命令保存目录(普通用户就可以读取的命令)<br>    /boot:启动目录,启动相关文件<br>    /dev:设备文件保存目录<br>    /etc:配置文件保存目录<br>    /home:普通用户的家目录<br>    /lib:系统库保存目录<br>    /mnt:系统挂载目录<br>    /media:挂载目录<br>    /proc和/sys:不能直接操作,保存的是内存的过载点<br>    /temp:临时目录<br>    /sbin:命令保存目录(超级用户才能使用的目录)<br>    /usr:系统软件资源目录<br>        /usr/bin/系统命令(普通用户)<br>        /usr/sbin系统命令(超级用户)<br>    /var:系统相关文档内容</p>
+<p><strong>2:文件处理命令</strong></p>
+<pre><code>A:*目录处理命令和文件处理命令*:
+            a:建立目录:mkdir -p [目录名]
+            选项:-p 递归创建
+            命令英文原意:make directories    
+    b:切换所在目录:cd [目录]
+    选项: ~ 进入当前用户的家目录(直接cd是一样的效果)
+          - 进入上次目录
+          .. 进入上一级目录
+          . 进入当前目录
+    命令英文原意:change directory     
+
+    c:查询所在目录位置:pwd
+    命令英文原意:print working directory
+
+    d:删除空目录:rmdir [目录名]
+    命令英文原意:remove empty directories
+
+    e:删除文件或目录:rm -rf [文件或目录]
+    选项: -r 删除目录
+          -f 强制
+    命令英文原意:remove
+
+    f:复制命令:cp [选项] [源文件或目录] [目标目录]
+    选项: -r 复制目录
+          -p 连带文件属性复制
+          -d 若源文件是链接文件,则复制链接属性
+          -a 相当于 -pdr(复制的文件与源文件的属性完全一样)
+    命令英文原意:copy
+
+    g:显示文件信息:ls [选项] [文件或目录]
+    选项:-a 显示所有文件,包括隐藏的文件
+         -l 显示详细信息(等同于ll)
+         -d 查看目录属性
+        -h 人性化显示(变成人类看的懂的)
+         -i 显示inode(带文件号)
+
+    h:剪切或改名:mv [源文件或目录] [目标目录]
+    命令英文原意:move
+
+
+B:*链接命令*:
+    a:链接命令:ln -s [源文件] [目标文件]
+    选项: -s 创建软链接(类似于快捷方式)
+    命令英文原意:link
+    功能描述:生成链接文件</code></pre><p><strong>3:文件搜索命令</strong></p>
+<pre><code>A:*文件搜索命令locate与find(locate比find效率高)*:
+    a:locate 文件名
+    功能描述:在后台数据库(/var/lib/mlocate 这个文件存放的locate命令所搜索的后台数据库,每天更新  一次,新建文件无法看到,强制更新数据库命令:updatedb)按文件名搜索,搜索速度更快
+
+B:*命令搜索命令whereis与which*:
+    a:搜索系统命令命令: whereis 命令名
+    选项:-b 只查找可执行文件
+         -m 只查找帮助文件    
+
+    b:搜索系统命令命令:which 文件名
+    功能描述:搜索命令所在的目录以及别名
+
+    c:PATH环境变量:定义的是系统搜索命令的路径
+C:*字符串搜索命令grep*:
+    a:搜索字符串命令:grep [选项] 字符串 文件名
+    功能描述:在文件当中匹配符合条件的字符串
+    选项: -i 忽略大小写
+          -v 排除指定字符串
+
+D:*find命令与grep命令的区别*:
+    a:find [搜索范围] [搜索条件]
+    功能描述:搜索文件(避免大范围搜索,非常耗资源,find是系统当中搜索符合条件的文件名,如果需要匹配,使用通配符匹配,通配符是完全匹配,通配符 * 匹配任意内容,? 匹配任意字符 [] 匹配任意一个中括号内的字符)
+    find [搜索范围] -user :按照所有者搜索
+    find [搜索范围] -nouser :查找没有所有者的文件</code></pre><p><strong>4:帮助命令</strong></p>
+<pre><code>A:*帮助命令man*    : 
+    a:man 命令 
+    功能描述:获取指定命令的帮助
+    man的级别: 1:查看命令的帮助
+              2:查看可被内核调用的函数的帮助
+              3:查看函数和函数库的帮助
+              4:查看特殊文件的帮助(主要是/dev目录下的文件)
+              5:查看配置文件的帮助
+              6:查看游戏的帮助
+              7:查看其他杂项的帮助
+              8:查看系统管理员可用命令的帮助
+              9:查看和内核相关文件的帮助    
+
+    man -f 命令
+    功能描述:查看命令拥有什么级别的帮助(等同于 whatis 命令)
+
+    man -k 命令
+    功能描述:查看和命令相关的所有帮助(等同于apropos)
+    b:man ls 
+    功能描述:查看ls的帮助
+
+B:*其他帮助命令*:
+    a:命令 --help
+    功能描述:获取命令选项的帮助
+
+    b:help sheel内部命令
+    功能描述:获取shell内部命令的帮助
+
+    c:详细命令帮助info:info 命令
+    选项:-回车 进入子帮助页面
+         -u   进入上层页面
+         -n   进入下一个帮助小节
+         -p   进入上一个帮助小节
+         -q   退出</code></pre><p><strong>5:压缩与解压缩命令</strong></p>
+<pre><code>A:*压缩命令*:
+常用压缩格式: .zip .gz .bz2 .tar.gz .tar.bz2
+    a:zip 压缩文件名 源文件
+    功能描述:压缩文件
+
+    b:zip -r 压缩文件名 源目录
+    功能描述:压缩目录
+
+    c:.gz格式压缩:gzip 源文件
+    功能描述:压缩为.gz格式的压缩文件,源文件会消失
+
+    d:.gz格式压缩:gzip -c 源文件 &gt;压缩文件
+    功能描述:压缩为.gz格式,源文件保留
+
+    e:.gz格式压缩:gzip -r 目录
+    功能描述:压缩目录下所有的子文件,但是不能压缩目录
+
+    f:.bz2格式压缩:bzip2 源文件
+    功能描述:压缩为.bz2格式的压缩文件,不保留原文件
+
+    g:.bz2格式压缩:bzip2 -k 源文件
+    功能描述:压缩为.bz2格式的压缩文件,保留原文件(bz2不能压缩目录)
+
+    h:.tar打包命令:tar -cvf 打包文件名 源文件
+    选项:  -c 打包
+          -v 显示过程
+          -f 指定打包后的文件名
+          -z 压缩为.tar.gz格式
+          -j 压缩为.tar.bz2格式
+
+B:*解压缩命令*:
+    常用解压缩格式: unzip .gz .bz2 .tar.gz .tar.bz2
+    a:unzip 压缩文件
+    功能描述:解压缩.zip文件
+
+    b:.gz格式解压缩
+    gzip -d 压缩文件
+    功能描述:解压缩文件
+
+    gunzip 压缩文件
+    功能描述:解压缩文件
+
+    c:.bz2格式解压缩
+    bzip2 -d 压缩文件
+    功能描述:解压缩,-k保留压缩文件
+
+    bunzip2 压缩文件
+    功能描述:解压缩,-k保留压缩文件
+
+    d:.tar解压缩命令:tar -xvf 打包文件名 
+    选项:-x 解打包
+     -z 压缩为.tar.gz格式</code></pre><p><strong>6:关机与重启命令</strong></p>
+<pre><code>A:*shutdown命令*:
+shutdown [选项] 时间
+选项: -c 取消前一个关机命令
+      -h 关机
+      -r 重启
+
+B:*其他关机命令*:
+halt
+poweroff
+init 0
+这三个不太安全
+C:其他重启命令
+reboot
+init 6
+init 后面数字的含义:
+    0:关机
+    1:单用户
+    2:不完全多用户,不含NFS服务
+    3:完全多用户
+    4:未分配
+    5:图形界面
+    6:重启
+runlevel命令查询当前系统运行级别 结果显示的是前一个字符为原先的级别,后一个字符为当前的级别
+
+logout 退出登陆命令</code></pre><p><strong>7:其他常用命令</strong></p>
+<pre><code>A:*挂载命令*:
+    a:查询与自动挂载:mount
+    功能描述:查询系统中已经挂载的设备
+
+    b:mount -a
+    功能描述:依据配置文件/etc/fstab的内容,自动挂载
+
+    c:挂载命令格式:mount [-t 文件系统] [-o 特殊选项] 设备文件名 挂载点
+    选项:-t 文件系统 加入文件系统类型来指定挂载的类型,可以ext3,ext4,iso9660等文件系统
+         -o 特殊选项 可以指定挂载的额外选项
+
+    d:挂载光盘:第一步放入光盘,第二步建立挂载(空目录)点,mkdir /mnt/cdrom/,第三部执行挂载命令
+
+    e:卸载命令:umount 设备文件名或挂载点
+
+    f:挂载U盘:第一步查看已挂载设备名命令 fdisk -l
+          第二步执行挂载命令
+
+
+B:*用户登陆查看命令*:
+    a:w 用户名
+    功能描述:查看用户登陆信息
+    命令输出:USER 登陆的用户名
+         TTY 登陆终端
+         FROM 从哪个IP地址登陆
+         LOGIN@ 登录时间
+         IDLE 用户闲置时间
+         JCPU 和该终端链接的所有进程占用的时间,这个时间里不包括过去的后台作业时间,但包括当前正在运行的后台作业所占用的时间
+         PCPU 当前进程所占用的时间
+         WHAT 当前正在运行的命令        
+    b:who 
+    功能描述:查看用户登陆信息
+    命令输出:用户名 登陆终端 登陆时间(登陆来源IP地址)
+
+    c:last 
+    功能描述:查看当前登陆用户信息和过去登陆用户信息(last命令默认读取/var/log/wtmp文件数据)
+    命令输出:用户名 登陆终端 登陆时间(登陆来源IP地址) 登录时间 退出时间(在线时间)
+
+    d:lastlog
+    功能描述:查看所有用户的最后一次登录时间(lastlog命令默认读取/var/log/lastlog文件数据)
+    命令输出:用户名 登陆终端 登陆来源IP地址 最后一次登录时间</code></pre>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%97%A5%E5%B8%B8%E6%80%BB%E7%BB%93/" rel="tag"># 日常总结</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2017/11/18/text/" rel="prev" title="linux常用命令3333">
+                  linux常用命令3333 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Arnold</p>
+  <div class="site-description" itemprop="description">Blog博客技术分享个人经验总结</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Arnold</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
