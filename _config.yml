@@ -4,8 +4,8 @@
 
 # Site
 title: 'Arnold'
-subtitle: 'Arnold'
-description: 'Blog博客技术分享个人经验总结'
+subtitle: '这世界会好吗?'
+description: '博客技术分享个人经验总结'
 keywords: 'blog'
 author: 'Arnold'
 language: 'zh-CN'
@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://159.138.20.29
+url: http://www.bestarnold.com
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -114,7 +114,11 @@ deploy:
 #  path: search.json
 #  field: post
 #
-##站点地图，seo搜索引擎需要
+##站点地图，seo搜索引擎需
+
+
+
+
 #sitemap:
 #  path: sitemap.xml
 #baidusitemap:
