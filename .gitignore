@@ -3,7 +3,7 @@ public
 
 .idea
 node_modules
-themes
+#themes
 
 # Compiled class file
 *.class
