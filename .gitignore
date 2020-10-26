@@ -2,7 +2,7 @@
 public
 
 .idea
-node_modules
+#node_modules
 #themes
 
 # Compiled class file
