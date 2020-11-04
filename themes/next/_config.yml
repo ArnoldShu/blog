@@ -197,12 +197,14 @@ social_icons:
 # Blog rolls
 links_settings:
   icon: link
-  title: 友情链接
+  title: 链接跳转
   # Available values: block | inline
   layout: block
 
 links:
-  Title: https://yingu.site
+  友情链接: https://yingu.site
+  码云: https://blog.csdn.net/qq_20340547?t=1
+  github: https://github.com/ArnoldShu
 
 # Table of Contents in the Sidebar
 # Front-matter variable (unsupport wrap expand_all).
